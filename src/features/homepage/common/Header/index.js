@@ -1,15 +1,12 @@
 import React from "react"
-import { Picture, StyledHeader, Text } from "./styled"
+import HeaderText from "./HeaderText"
+import { Picture, StyledHeader } from "./styled"
 
 
 const Header = () => (
     <StyledHeader>
-        <Picture>
-
-        </Picture>
-        <Text>
-            Blallsa
-        </Text>
+        <Picture />
+        <HeaderText />
     </StyledHeader>
 )
 

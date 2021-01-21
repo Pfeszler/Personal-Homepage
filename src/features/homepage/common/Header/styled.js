@@ -4,11 +4,11 @@ import picture from "../assets/picture.jpg"
 export const StyledHeader = styled.h1`
     width: 100%;
     display: flex;
-    flex-basis: 25%;
     margin: 0;
-` 
+    position: relative;
+`
 export const Picture = styled.div`
-    width: 25%;
+    flex: 1 0 25%;
     background-image: url(${picture});
     background-size: cover;
     border-radius: 50%;
@@ -18,7 +18,4 @@ export const Picture = styled.div`
         padding-bottom: 100%;
         display: block;
     }
-`
-export const Text = styled.section`
-    margin: 0 66px;
 `
