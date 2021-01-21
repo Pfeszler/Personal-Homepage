@@ -3,7 +3,8 @@ import { createGlobalStyle } from "styled-components"
 export const GlobalStyle = createGlobalStyle`
     html {
         box-sizing: border-box;
-        background-color: ${({ theme }) => theme.color.background}
+        background-color: ${({ theme }) => theme.color.background};
+        color: ${({ theme }) => theme.color.textPrimary}
     }
 
     *, ::before, ::after {
@@ -13,6 +14,6 @@ export const GlobalStyle = createGlobalStyle`
     #root {
         margin: 0;
         font-family: 'Inter', sans-serif;
-         
+
     }
 `
