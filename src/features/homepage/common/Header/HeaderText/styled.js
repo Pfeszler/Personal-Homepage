@@ -42,5 +42,5 @@ export const HireButon = styled.button`
     color: ${({ theme }) => theme.color.hireButtonText};
     border-radius: 4px;
     background-color: ${({ theme }) => theme.color.hireButtonBackground};
-    border: 1px solid;
+    border: 1px solid ${({ theme }) => theme.color.hireButtonBorder};
 `

@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { css } from "styled-components"
 
 export const Wrapper = styled.div`
     display: flex;
@@ -40,5 +41,8 @@ export const Button = styled.button`
 `
 
 export const Icon = styled.img`
-    filter: brightness(0%)
+    ${({ darkMode }) => darkMode && css`
+        filter: brightness(0%)
+    `}
+    
 `
