@@ -10,12 +10,12 @@ const pageSlice = createSlice({
             state.darkMode = !state.darkMode
         }
     }
-})
+});
 
 export const {
     toggleDarkMode
-} = pageSlice.actions
+} = pageSlice.actions;
 
-export const selectPage = state => state.page
-export const selectDarkMode = state => selectPage(state).darkMode
-export default pageSlice.reducer
+export const selectPage = state => state.page;
+export const selectDarkMode = state => selectPage(state).darkMode;
+export default pageSlice.reducer;
