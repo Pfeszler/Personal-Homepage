@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { css } from "styled-components"
 
 export const Wrapper = styled.div`
     display: flex;
@@ -38,11 +37,11 @@ export const Button = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s;
+    transform: translateX(${({ theme }) => theme.transition.darkModeButton}%);
+  
 `
 
 export const Icon = styled.img`
-    ${({ darkMode }) => darkMode && css`
-        filter: brightness(0%)
-    `}
-    
+        filter: brightness(${({ theme }) => theme.brightness.darkModeIcon}%);
 `

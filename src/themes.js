@@ -12,6 +12,12 @@ export const light = {
     },
     breakpoints: {
         mobileMax: 767
+    },
+    transition: {
+        darkModeButton: 0
+    },
+    brightness: {
+        darkModeIcon: 100
     }
 }
 
@@ -23,11 +29,17 @@ export const dark = {
         hireButtonText: "#FFFFFF",
         hireButtonBackground: "#0366D6",
         hireButtonBorder: "rgba(209, 213, 218, 0.1)",
-        slider: "363636",
+        slider: "rgba(54, 54, 54, 0.72)",
         sliderBorder: "rgba(9, 10, 51, 0.02)",
         sliderButton: "#FFFFFF"
     },
     breakpoints: {
         mobileMax: 767
+    },
+    transition: {
+        darkModeButton: 100
+    },
+    brightness: {
+        darkModeIcon: 0
     }
 }

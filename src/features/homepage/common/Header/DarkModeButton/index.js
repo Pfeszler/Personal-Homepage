@@ -21,7 +21,6 @@ const DarkModeButton = () => {
                 <Button>
                     <Icon
                         src={image}
-                        darkMode={darkMode}
                     />
                 </Button>
             </Slider>
