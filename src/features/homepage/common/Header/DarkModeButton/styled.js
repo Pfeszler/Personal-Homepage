@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
 export const Label = styled.p`
     margin: 0 12.5px;
 
-    @media(max-width: ${({theme}) => theme.breakpoints.mobileMax}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         display: none;
     }
 `

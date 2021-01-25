@@ -3,7 +3,7 @@ export const light = {
         background: "#FBFBFE ",
         textPrimary: "#252525",
         textSecondary: "#6E7E91",
-        hireButtonText: "#FFFFFF",
+        hireButtonText: "#FFFFFF", 
         hireButtonBackground: "#0366D6",
         hireButtonBorder: "rgba(209, 213, 218, 0.1)",
         slider: "#E5E5E5",
