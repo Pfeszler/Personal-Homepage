@@ -11,6 +11,7 @@ export const light = {
         sliderButton: "#6E7E91"
     },
     breakpoints: {
+        tabletMax: 991,
         mobileMax: 767
     },
     transition: {
@@ -34,6 +35,7 @@ export const dark = {
         sliderButton: "#FFFFFF"
     },
     breakpoints: {
+        tabletMax: 991,
         mobileMax: 767
     },
     transition: {

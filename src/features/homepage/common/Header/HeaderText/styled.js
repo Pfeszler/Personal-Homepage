@@ -7,6 +7,9 @@ export const StyledHeaderText = styled.section`
     flex-direction: column;
     justify-content: center;
 
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
+        margin: 0 3px
+    }
 `
 
 export const FirstHeader = styled.h2`
@@ -16,7 +19,10 @@ export const FirstHeader = styled.h2`
     text-transform: uppercase;
     font-weight: 700;
     color: ${({ theme }) => theme.color.textSecondary};
-    
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
+       margin-bottom: 8px
+    }
 `
 
 export const Name = styled.h3`
@@ -24,6 +30,10 @@ export const Name = styled.h3`
     font-size: 38px;
     font-weight: 900;
     text-transform: capitalize;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
+       font-size: 27px;
+    }
 `
 export const HeaderDiscription = styled.p`
     margin: 35px 0;
@@ -31,6 +41,10 @@ export const HeaderDiscription = styled.p`
     font-weight: 400;
     color: ${({ theme }) => theme.color.textSecondary};
 
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
+       margin: 16px 0;
+       font-size: 17px;
+    }
 `
 export const HireButon = styled.button`
     margin: 8px 0;
@@ -43,4 +57,9 @@ export const HireButon = styled.button`
     border-radius: 4px;
     background-color: ${({ theme }) => theme.color.hireButtonBackground};
     border: 1px solid ${({ theme }) => theme.color.hireButtonBorder};
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+       font-size: 18px;
+       width: 50%;
+    }
 `
