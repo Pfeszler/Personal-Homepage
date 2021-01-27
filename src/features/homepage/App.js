@@ -6,6 +6,7 @@ import { light, dark } from "../../themes"
 import Container from "./common/Container";
 import Header from "./common/Header";
 import ListSection from "./common/ListSection";
+import Portfolio from "./common/Portfolio";
 import { selectDarkMode } from "./pageSlice";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           title="What I want to lern"
           list={array}
         />
+        <Portfolio />
       </Container>
     </ThemeProvider>
   );
