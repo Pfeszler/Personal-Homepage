@@ -29,4 +29,6 @@ export const {
 
 export const selectPage = state => state.page;
 export const selectDarkMode = state => selectPage(state).darkMode;
+export const selectStatus = state => selectPage(state).status;
+export const selectPortfolio = state => selectPage(state).Portfolio;
 export default pageSlice.reducer;
