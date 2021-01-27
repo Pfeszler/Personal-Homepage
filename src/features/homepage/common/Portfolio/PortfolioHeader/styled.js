@@ -18,7 +18,7 @@ export const PortfolioIcon = styled.img`
         height: 32px;
     }
 `
-export const Header = styled.h3`
+export const Header = styled.p`
     margin: 0;
     margin-bottom: 8px;
     font-weight: 900;
@@ -32,7 +32,7 @@ export const Header = styled.h3`
     }
 `
 
-export const Subheader = styled.h4`
+export const Subheader = styled.p`
     margin: 0;
     font-weight: 400;
     font-size: 20px;
