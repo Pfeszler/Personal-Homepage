@@ -6,7 +6,7 @@ import PortfolioHeader from "./PortfolioHeader"
 import FailedPage from "./PortfolioHeader/FailedPage"
 import LoadingPage from "./PortfolioHeader/LoadingPage"
 import SuccessPage from "./PortfolioHeader/SuccessPage"
-import { StyledPortfolio } from "./styleds"
+import { StyledPortfolio } from "./styled"
 
 const Portfolio = () => {
 
