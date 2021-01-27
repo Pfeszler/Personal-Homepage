@@ -35,7 +35,7 @@ export const Name = styled.h3`
        font-size: 27px;
     }
 `
-export const HeaderDiscription = styled.p`
+export const HeaderDescription = styled.p`
     margin: 35px 0;
     font-size: 20px;
     font-weight: 400;
