@@ -1,6 +1,6 @@
 import axios from "axios"
 import { useDispatch } from "react-redux";
-import { fetchSucces, fetchFailed } from "./pageSlice"
+import { fetchSuccess, fetchFailed } from "./pageSlice"
 
 export const useFetchFromApi = () => {
     const dispatch = useDispatch()
@@ -8,7 +8,7 @@ export const useFetchFromApi = () => {
     const fetchFromApi = async () => {
         try {
             const response = await axios.get(`https://api.github.com/users/Pfeszler/repos`);
-            dispatch(fetchSucces(response.data))
+            dispatch(fetchSuccess(response.data))
         } catch (error) {
             dispatch(fetchFailed())
         };

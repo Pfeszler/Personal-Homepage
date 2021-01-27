@@ -11,8 +11,8 @@ const pageSlice = createSlice({
         toggleDarkMode: state => {
             state.darkMode = !state.darkMode;
         },
-        fetchSucces: (state, { payload }) => {
-            state.status = "succes";
+        fetchSuccess: (state, { payload }) => {
+            state.status = "success";
             state.portfolio = payload
         },
         fetchFailed: state => {
@@ -23,7 +23,7 @@ const pageSlice = createSlice({
 
 export const {
     toggleDarkMode,
-    fetchSucces,
+    fetchSuccess,
     fetchFailed,
 } = pageSlice.actions;
 
