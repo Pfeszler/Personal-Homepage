@@ -12,7 +12,9 @@ export const light = {
         shadow: "rgba(9, 10, 51, 0.02)",
         section: "#FFFFFF",
         sectionHeaderBorder: "rgba(209, 213, 218, 0.3)",
-        bullet: "#0366D6"
+        bullet: "#0366D6",
+        gridBorder: "rgba(209, 213, 218, 0.3)",
+        projectTitle: "#0366D6"
     },
     breakpoints: {
         tabletMax: 991,
@@ -40,7 +42,10 @@ export const dark = {
         shadow: "rgba(9, 10, 51, 0.02)",
         section: "rgba(54, 54, 54, 0.72);",
         sectionHeaderBorder: "rgba(209, 213, 218, 0.1)",
-        bullet: "#0366D6"
+        bullet: "#0366D6",
+        gridBorder: "rgba(209, 213, 218, 0.3)",
+        projectTitle: "#FFFFFF"
+        
     },
     breakpoints: {
         tabletMax: 991,
