@@ -1,3 +1,4 @@
+import { nanoid } from "@reduxjs/toolkit"
 import React from "react"
 import { List, ListHeader, ListItem, StyledListSection } from "./styled"
 
@@ -8,7 +9,9 @@ const ListSection = ({ title, list }) => (
         </ListHeader>
         <List>
             {list.map(item =>
-                <ListItem>
+                <ListItem
+                    key={nanoid()}
+                >
                     {item}
                 </ListItem>
             )}
