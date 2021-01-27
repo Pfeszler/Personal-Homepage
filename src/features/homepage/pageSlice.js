@@ -12,8 +12,8 @@ const pageSlice = createSlice({
             state.darkMode = !state.darkMode;
         },
         fetchSuccess: (state, { payload }) => {
-            state.status = "success";
             state.portfolio = payload
+            state.status = "success";
         },
         fetchFailed: state => {
             state.status = "failed"
@@ -30,5 +30,5 @@ export const {
 export const selectPage = state => state.page;
 export const selectDarkMode = state => selectPage(state).darkMode;
 export const selectStatus = state => selectPage(state).status;
-export const selectPortfolio = state => selectPage(state).Portfolio;
+export const selectPortfolio = state => selectPage(state).portfolio;
 export default pageSlice.reducer;
