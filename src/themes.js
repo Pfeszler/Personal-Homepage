@@ -14,7 +14,8 @@ export const light = {
         sectionHeaderBorder: "rgba(209, 213, 218, 0.3)",
         bullet: "#0366D6",
         gridBorder: "rgba(209, 213, 218, 0.3)",
-        projectTitle: "#0366D6"
+        projectTitle: "#0366D6",
+        link: "#0366D6"
     },
     breakpoints: {
         tabletMax: 991,
@@ -44,8 +45,9 @@ export const dark = {
         sectionHeaderBorder: "rgba(209, 213, 218, 0.1)",
         bullet: "#0366D6",
         gridBorder: "rgba(209, 213, 218, 0.3)",
-        projectTitle: "#FFFFFF"
-        
+        projectTitle: "#FFFFFF",
+        link: "#0366D6"
+
     },
     breakpoints: {
         tabletMax: 991,

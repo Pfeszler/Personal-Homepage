@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const StyledPortfolioHeader = styled.h2`
+    width: 100%;
     margin: 0;
     margin-bottom: 24px;
     display: flex;
