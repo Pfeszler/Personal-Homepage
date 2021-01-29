@@ -57,6 +57,22 @@ export const HireButon = styled.button`
     border-radius: 4px;
     background-color: ${({ theme }) => theme.color.hireButtonBackground};
     border: 1px solid ${({ theme }) => theme.color.hireButtonBorder};
+    transition: box-shadow 0.2s;
+
+    &:hover {
+        box-shadow: 2px -2px 0px ${({ theme }) => theme.color.hireButtonFocus},
+         -2px 2px 0px ${({ theme }) => theme.color.hireButtonFocus}, 
+         2px 2px 0px ${({ theme }) => theme.color.hireButtonFocus}, 
+         -2px -2px 0px ${({ theme }) => theme.color.hireButtonFocus};
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 2px -2px 0px ${({ theme }) => theme.color.hireButtonFocus},
+         -2px 2px 0px ${({ theme }) => theme.color.hireButtonFocus}, 
+         2px 2px 0px ${({ theme }) => theme.color.hireButtonFocus}, 
+         -2px -2px 0px ${({ theme }) => theme.color.hireButtonFocus};
+    }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
        font-size: 18px;

@@ -19,6 +19,12 @@ export const ProjectTile = styled.li`
     background-color: ${({ theme }) => theme.color.section};
     border: 6px solid ${({ theme }) => theme.color.gridBorder};
     box-shadow: 0px -2px 50px ${({ theme }) => theme.color.shadow};
+    transition: border 0.2s;
+
+    &:hover{
+        border: 6px solid ${({ theme }) => theme.color.gridBorderHover};
+    }
+    
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         height: unset;
@@ -61,8 +67,20 @@ export const Label = styled.span`
 
 export const Link = styled.a`
     display: inline-block;
+    padding: 1px 0;
     margin-left: 8px;
     text-decoration: none;
     color: ${({ theme }) => theme.color.link};
-    text-overflow: hidden
+    border-bottom: 1px solid transparent;
+    transition: border 0.2s;
+
+    &:hover{
+        border-bottom: 1px solid currentColor;
+    }
+
+    &:focus {
+        outline: none;
+        border-bottom: 1px solid currentColor;
+    }
+    
 `

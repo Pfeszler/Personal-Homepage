@@ -6,6 +6,7 @@ export const light = {
         hireButtonText: "#FFFFFF",
         hireButtonBackground: "#0366D6",
         hireButtonBorder: "rgba(209, 213, 218, 0.1)",
+        hireButtonFocus: "#8CC2FF",
         slider: "#E5E5E5",
         sliderBorder: "rgba(209, 213, 218, 0.3)",
         sliderButton: "#6E7E91",
@@ -14,6 +15,7 @@ export const light = {
         sectionHeaderBorder: "rgba(209, 213, 218, 0.3)",
         bullet: "#0366D6",
         gridBorder: "rgba(209, 213, 218, 0.3)",
+        gridBorderHover: "rgba(3, 102, 214, 0.2);",
         projectTitle: "#0366D6",
         link: "#0366D6"
     },
@@ -35,18 +37,20 @@ export const dark = {
         textPrimary: "#FFFFFF",
         textSecondary: "#FFFFFF",
         hireButtonText: "#FFFFFF",
-        hireButtonBackground: "#0366D6",
+        hireButtonBackground: "#2188FF",
         hireButtonBorder: "rgba(209, 213, 218, 0.1)",
+        hireButtonFocus: "#6D93BE",
         slider: "rgba(54, 54, 54, 0.72)",
         sliderBorder: "rgba(9, 10, 51, 0.02)",
         sliderButton: "#FFFFFF",
         shadow: "rgba(9, 10, 51, 0.02)",
         section: "rgba(54, 54, 54, 0.72);",
         sectionHeaderBorder: "rgba(209, 213, 218, 0.1)",
-        bullet: "#0366D6",
+        bullet: "#2188FF",
         gridBorder: "rgba(209, 213, 218, 0.3)",
+        gridBorderHover: "rgba(3, 102, 214, 0.5)",
         projectTitle: "#FFFFFF",
-        link: "#0366D6"
+        link: "#2188FF"
 
     },
     breakpoints: {
