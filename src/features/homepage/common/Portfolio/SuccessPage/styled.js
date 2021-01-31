@@ -24,22 +24,26 @@ export const ProjectTile = styled.li`
     &:hover{
         border: 6px solid ${({ theme }) => theme.color.gridBorderHover};
     }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
+        padding: 24px;
+    }
     
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         height: unset;
         min-height: 240px;
-        padding: 24px;
     }
 `
 
 export const Title = styled.h3`
     font-size: 24px;
+    margin: 0;
     font-weight: 700;
     color: ${({ theme }) => theme.color.projectTitle};
     text-transform: capitalize;
 
-    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
         font-size: 16px;
     }
 `
@@ -54,7 +58,7 @@ export const LinkContainer = styled.div`
     margin: 8px 0;
     font-size: 18px;
 
-    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
         font-size: 14px;
     }
 `
