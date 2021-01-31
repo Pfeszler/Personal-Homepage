@@ -3,15 +3,15 @@ import { useSelector } from "react-redux"
 import { selectStatus } from "../../pageSlice"
 import { useFetchFromApi } from "../../useFetchFromApi"
 import PortfolioHeader from "./PortfolioHeader"
-import FailedPage from "./PortfolioHeader/FailedPage"
-import LoadingPage from "./PortfolioHeader/LoadingPage"
-import SuccessPage from "./PortfolioHeader/SuccessPage"
+import FailedPage from "./FailedPage"
+import LoadingPage from "./LoadingPage"
+import SuccessPage from "./SuccessPage"
 import { StyledPortfolio } from "./styled"
 
 const Portfolio = () => {
 
     const fetchFromApi = useFetchFromApi();
-    useEffect(() => { fetchFromApi() }, [])
+    useEffect(() => { setTimeout(fetchFromApi, 1500) }, [])
     // intentional empty dependency array, to ensure that fetch will be done only on first load
 
     const status = useSelector(selectStatus);

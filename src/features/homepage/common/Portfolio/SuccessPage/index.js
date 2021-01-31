@@ -1,7 +1,7 @@
 import { nanoid } from "@reduxjs/toolkit";
 import React from "react"
 import { useSelector } from "react-redux";
-import { selectPortfolio } from "../../../../pageSlice";
+import { selectPortfolio } from "../../../pageSlice";
 import { Description, Label, Link, LinkContainer, ProjectTile, StyledSuccessPage, Title } from "./styled";
 
 const SuccessPage = ({ status }) => {
