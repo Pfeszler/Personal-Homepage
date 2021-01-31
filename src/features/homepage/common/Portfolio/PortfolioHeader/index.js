@@ -1,13 +1,12 @@
 import React from "react"
-import Icon from "../../assets/GitHubLogo.svg"
+import GitHubLogo from "../../assets/GitHubLogo"
 import { Header, PortfolioIcon, StyledPortfolioHeader, Subheader } from "./styled"
 
 const PortfolioHeader = () => (
     <StyledPortfolioHeader>
-        <PortfolioIcon
-            src={Icon}
-            alt="GitHub Icon"
-        />
+        <PortfolioIcon>
+            <GitHubLogo />
+        </PortfolioIcon>
         <Header>
             portfolio
         </Header>

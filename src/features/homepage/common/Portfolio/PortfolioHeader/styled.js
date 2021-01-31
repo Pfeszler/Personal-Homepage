@@ -9,10 +9,14 @@ export const StyledPortfolioHeader = styled.h2`
     align-items: center;
 `
 
-export const PortfolioIcon = styled.img`
+export const PortfolioIcon = styled.svg.attrs({ viewBox: "0 0 40 40", xmlns: "http://www.w3.org/2000/svg" })`
     width: 40px;
     height: 40px;
     margin-bottom: 13px;
+
+    path {
+        fill: ${({ theme }) => theme.color.socialIcon};
+    }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         width: 32px;
