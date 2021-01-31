@@ -28,6 +28,11 @@ export const Button = styled.button`
          -2px -2px 0px ${({ theme }) => theme.color.buttonFocus};
     }
 
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
+       font-size: 18px;
+       width: 25%;
+    }
+
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
        font-size: 18px;
        width: 50%;
