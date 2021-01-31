@@ -47,17 +47,22 @@ export const HeaderDescription = styled.p`
     }
 `
 export const HireButon = styled.button`
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    grid-gap: 18px;
     margin: 8px 0;
     width: 20%;
     padding: 12px 16px;
     font-size: 20px;
     font-weight: 600;
     text-transform: capitalize;
-    color: ${({ theme }) => theme.color.hireButtonText};
     border-radius: 4px;
+    color: ${({ theme }) => theme.color.hireButtonText};
     background-color: ${({ theme }) => theme.color.hireButtonBackground};
     border: 1px solid ${({ theme }) => theme.color.hireButtonBorder};
     transition: box-shadow 0.2s;
+    text-decoration: none;
 
     &:hover {
         box-shadow: 2px -2px 0px ${({ theme }) => theme.color.hireButtonFocus},
@@ -77,5 +82,6 @@ export const HireButon = styled.button`
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
        font-size: 18px;
        width: 50%;
+       grid-gap: 14px;
     }
 `
