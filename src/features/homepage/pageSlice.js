@@ -1,9 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit"
+import { getFromLocalStorage } from "./localStorage/localStorage"
 
 const pageSlice = createSlice({
     name: "page",
     initialState: {
-        darkMode: false,
+        darkMode: getFromLocalStorage(false),
         status: "loading",
         portfolio: []
     },

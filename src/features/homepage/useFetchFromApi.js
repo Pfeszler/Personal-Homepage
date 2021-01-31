@@ -7,7 +7,7 @@ export const useFetchFromApi = () => {
 
     const fetchFromApi = async () => {
         try {
-            const response = await axios.get("");
+            const response = await axios.get("https://api.github.com/users/Pfeszler/repos");
             dispatch(fetchSuccess(response.data));
         } catch (error) {
             dispatch(fetchFailed());
