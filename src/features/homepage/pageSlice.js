@@ -5,6 +5,28 @@ const pageSlice = createSlice({
     name: "page",
     initialState: {
         darkMode: getFromLocalStorage(false),
+        skillset: [
+            "HTML5",
+            "RWD",
+            "Accessibility and Semantics",
+            "BEM notation",
+            "Markdown",
+            "npm",
+            "CSS3",
+            "CSS Grid",
+            "CSS Flexbox",
+            "JavaScript ES6",
+            "Local Storage",
+            "Immutability",
+            "React",
+            "Custom Hooks",
+            "Redux and toolkit",
+            "Redux Saga",
+            "React- Router",
+            "Axios",
+            "Teamwork",
+            "Customer Service"
+        ],
         status: "loading",
         portfolio: []
     },
@@ -30,6 +52,7 @@ export const {
 
 export const selectPage = state => state.page;
 export const selectDarkMode = state => selectPage(state).darkMode;
+export const selectSkillset = state => selectPage(state).skillset;
 export const selectStatus = state => selectPage(state).status;
 export const selectPortfolio = state => selectPage(state).portfolio;
 export default pageSlice.reducer;

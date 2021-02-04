@@ -4,15 +4,18 @@ import { ThemeProvider } from "styled-components"
 import { GlobalStyle } from "../../GlobalStyle";
 import { light, dark } from "../../themes"
 import Container from "./common/Container";
+import Footer from "./common/Footer";
 import Header from "./common/Header";
 import ListSection from "./common/ListSection";
 import Portfolio from "./common/Portfolio";
-import { selectDarkMode } from "./pageSlice";
+import { selectDarkMode, selectSkillset } from "./pageSlice";
 
 function App() {
 
   const darkMode = useSelector(selectDarkMode);
-  const array = ["Teamwork", "2", "3", "4"]
+
+  const skillset = useSelector(selectSkillset);
+  const array = ["Teamwork", "2", "3", "4"];
 
   return (
     <ThemeProvider
@@ -23,13 +26,14 @@ function App() {
         <Header />
         <ListSection
           title="My skillset inculdes"
-          list={array}
+          list={skillset}
         />
         <ListSection
           title="What I want to lern"
           list={array}
         />
         <Portfolio />
+        <Footer />
       </Container>
     </ThemeProvider>
   );

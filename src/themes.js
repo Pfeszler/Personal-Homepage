@@ -18,7 +18,8 @@ export const light = {
         gridBorder: "rgba(209, 213, 218, 0.3)",
         gridBorderHover: "rgba(3, 102, 214, 0.2);",
         projectTitle: "#0366D6",
-        link: "#0366D6"
+        link: "#0366D6",
+        emailHover: "#0366D6"
     },
     breakpoints: {
         tabletMax: 991,
@@ -52,8 +53,8 @@ export const dark = {
         gridBorder: "rgba(209, 213, 218, 0.3)",
         gridBorderHover: "rgba(3, 102, 214, 0.5)",
         projectTitle: "#FFFFFF",
-        link: "#2188FF"
-
+        link: "#2188FF",
+        emailHover: "#2188FF"
     },
     breakpoints: {
         tabletMax: 991,
