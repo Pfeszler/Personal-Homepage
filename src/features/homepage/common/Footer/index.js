@@ -2,7 +2,7 @@ import React from "react"
 import { Email, FooterHeader, FooterText } from "./styled"
 
 const Footer = () => (
-    <section>
+    <footer>
         <FooterHeader>
             let's talk!
         </FooterHeader>
@@ -14,7 +14,7 @@ const Footer = () => (
         <FooterText>
             lorem blsa jwkaj djawk djwkajkldwa jkldjwklqjd irugitejwg  ifdjqwidjqw  oidopkwpok djdskajdz  wqiodiiowaij djskajdaslkjdwaj jfkjwakfjw
         </FooterText>
-    </section>
+    </footer>
 )
 
 export default Footer
