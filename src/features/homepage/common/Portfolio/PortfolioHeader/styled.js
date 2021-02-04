@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { ReactComponent as Icon } from "../../assets/GitHubLogo.svg"
 
-export const StyledPortfolioHeader = styled.h2`
+export const StyledPortfolioHeader = styled.header`
     width: 100%;
     margin: 0;
     margin-bottom: 24px;
@@ -20,7 +20,7 @@ export const PortfolioIcon = styled(Icon)`
         width: 32px;
     }
 `
-export const Header = styled.p`
+export const Header = styled.h2`
     margin: 0;
     margin-bottom: 8px;
     font-weight: 900;
@@ -34,7 +34,7 @@ export const Header = styled.p`
     }
 `
 
-export const Subheader = styled.p`
+export const Subheader = styled.h3`
     margin: 0;
     font-weight: 400;
     font-size: 20px;
