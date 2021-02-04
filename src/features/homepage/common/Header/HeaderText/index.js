@@ -1,6 +1,7 @@
 import React from "react"
 import icon from "../../assets/hireIcon.svg"
 import { HeaderDescription, Name, StyledHeaderText, ThisIs } from "./styled"
+import { email } from "../../assets/email"
 import { Button } from "../../Button/Button"
 
 const HeaderText = () => (
@@ -16,7 +17,8 @@ const HeaderText = () => (
         </HeaderDescription>
         <Button
             as="a"
-            href="mailto:pfeszler@gmail.com"
+            href={`mailto:${email}`}
+            title={email}
             type="hire"
         >
             <img

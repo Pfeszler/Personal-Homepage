@@ -1,5 +1,6 @@
 import React from "react"
 import { Email, FooterHeader, FooterText } from "./styled"
+import { email } from "../assets/email"
 
 const Footer = () => (
     <footer>
@@ -7,9 +8,10 @@ const Footer = () => (
             let's talk!
         </FooterHeader>
         <Email
-            href="mailto:pfeszler@gmail.com"
+            href={`mailto:${email}`}
+            title={email}
         >
-            pfeszler@gmail.com
+            {email}
         </Email>
         <FooterText>
             lorem blsa jwkaj djawk djwkajkldwa jkldjwklqjd irugitejwg  ifdjqwidjqw  oidopkwpok djdskajdz  wqiodiiowaij djskajdaslkjdwaj jfkjwakfjw
