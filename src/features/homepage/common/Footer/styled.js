@@ -6,6 +6,10 @@ export const FooterHeader = styled.h2`
     font-size: 12px;
     text-transform: uppercase;
     color: ${({ theme }) => theme.color.textSecondary};
+
+    @media(max-width: ${({theme}) => theme.breakpoints.mobileMax}px){
+        margin: 12px 0;
+    }
 `
 
 export const Email = styled.a`
@@ -19,6 +23,11 @@ export const Email = styled.a`
     &:hover {
         color: ${({ theme }) => theme.color.emailHover}
     }
+
+    @media(max-width: ${({theme}) => theme.breakpoints.mobileMax}px){
+        font-size: 18px;
+        margin: 12px 0;
+    }
 `
 
 export const FooterText = styled.p`
@@ -26,4 +35,9 @@ export const FooterText = styled.p`
     margin: 24px 0;
     font-size: 18px;
     color: ${({ theme }) => theme.color.textPrimary};
+
+    @media(max-width: ${({theme}) => theme.breakpoints.mobileMax}px){
+        margin: 12px 0;
+        font-size: 14px;
+    }
 `

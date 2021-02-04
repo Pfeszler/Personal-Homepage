@@ -8,6 +8,10 @@ export const StyledSocialList = styled.ul`
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
+        margin-top: 40px;
+    }
 `
 export const IconLink = styled.a`
     text-decoration: none;
@@ -19,9 +23,17 @@ export const IconLink = styled.a`
     &:hover {
         color: ${({ theme }) => theme.color.socialIconColor}
     }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
+        margin-right:16px;
+    }
 `
 
 export const StyledIcon = Icon => styled(Icon)`
     height: auto;
     width: 40px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
+        width: 32px;
+    }
 `
