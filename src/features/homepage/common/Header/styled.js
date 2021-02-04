@@ -6,6 +6,7 @@ export const StyledHeader = styled.header`
     display: flex;
     margin: 0 0;
     position: relative;
+    align-items: center;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
         flex-direction: column;
@@ -14,18 +15,19 @@ export const StyledHeader = styled.header`
 `
 export const Picture = styled.div`
     flex: 1 0 25%;
+    aspect-ratio: 1 / 1;
     background-image: url(${picture});
     background-size: cover;
     border-radius: 50%;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
-        width: 50%;
+        width: 25%;
         margin-bottom: 13px;
     }
 
-    &::after {
-        content: "";
-        padding-bottom: 100%;
-        display: block;
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        width: 50%;
     }
+
+    
 `

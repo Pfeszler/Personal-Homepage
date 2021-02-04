@@ -1,7 +1,8 @@
 import styled, { css } from "styled-components"
 
 export const Button = styled.button`
-    width: 20%;
+    max-width: max-content;
+    min-width: 20%;
     padding: 12px 16px;
     font-size: 20px;
     font-weight: 600;
@@ -30,12 +31,11 @@ export const Button = styled.button`
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
        font-size: 18px;
-       width: 25%;
+       min-width: 25%;
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-       font-size: 18px;
-       width: 50%;
+       min-width: 50%;
     }
 
     ${({ type }) => type === "hire" && css`
