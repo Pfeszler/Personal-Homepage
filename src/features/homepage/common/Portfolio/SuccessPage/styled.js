@@ -9,7 +9,7 @@ export const StyledSuccessPage = styled.ul`
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         grid-template-columns: 1fr; 
-        grid-gap: 0;
+        grid-gap: 16px 0;
     }
 `
 
