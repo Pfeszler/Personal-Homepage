@@ -7,6 +7,7 @@ export const StyledListSection = styled.section`
     border-radius: 4px;
     box-shadow: 0px -2px 50px ${({ theme }) => theme.color.shadow};
     background: ${({ theme }) => theme.color.section};
+    transition: background 0.3s;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         padding: 16px;

@@ -17,6 +17,7 @@ export const ProjectTile = styled.li`
     height: 322px;
     padding: 56px;
     background-color: ${({ theme }) => theme.color.section};
+    transition: background 0.3s;
     border: 6px solid ${({ theme }) => theme.color.gridBorder};
     box-shadow: 0px -2px 50px ${({ theme }) => theme.color.shadow};
     transition: border 0.2s;
