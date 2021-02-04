@@ -27,3 +27,8 @@ export const FooterText = styled.p`
     font-size: 18px;
     color: ${({ theme }) => theme.color.textPrimary};
 `
+
+export const StyledIcon = Icon => styled(Icon)`
+    height: auto;
+    width: 40px;
+`
