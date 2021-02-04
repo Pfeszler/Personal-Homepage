@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { ReactComponent as DarkModeIcon } from "../../assets/darkModeButton.svg"
 
 export const Wrapper = styled.div`
     display: flex;
@@ -46,6 +47,6 @@ export const Button = styled.button`
   
 `
 
-export const Icon = styled.img`
-        filter: brightness(${({ theme }) => theme.brightness.darkModeIcon}%);
+export const Icon = styled(DarkModeIcon)`
+        color: ${({ theme }) => theme.color.darkModeIcon}
 `

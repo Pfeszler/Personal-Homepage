@@ -1,6 +1,5 @@
 import React from "react"
 import { Button, Icon, Label, Slider, Wrapper } from "./styled"
-import image from "../../assets/darkModeButton.svg"
 import { useDispatch, useSelector } from "react-redux"
 import { selectDarkMode, toggleDarkMode } from "../../../pageSlice"
 
@@ -19,9 +18,7 @@ const DarkModeButton = () => {
                 onClick={() => dispatch(toggleDarkMode())}
             >
                 <Button>
-                    <Icon
-                        src={image}
-                    />
+                    <Icon />
                 </Button>
             </Slider>
         </Wrapper>

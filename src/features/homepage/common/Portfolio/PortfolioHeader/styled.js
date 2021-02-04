@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { ReactComponent as Icon } from "../../assets/GitHubLogo.svg"
 
 export const StyledPortfolioHeader = styled.h2`
     width: 100%;
@@ -9,18 +10,14 @@ export const StyledPortfolioHeader = styled.h2`
     align-items: center;
 `
 
-export const PortfolioIcon = styled.svg.attrs({ viewBox: "0 0 40 40", xmlns: "http://www.w3.org/2000/svg" })`
+export const PortfolioIcon = styled(Icon)`
+    height: auto;
     width: 40px;
-    height: 40px;
     margin-bottom: 13px;
-
-    path {
-        fill: ${({ theme }) => theme.color.socialIcon};
-    }
+    color: ${({ theme }) => theme.color.socialIconColor};
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         width: 32px;
-        height: 32px;
     }
 `
 export const Header = styled.p`
