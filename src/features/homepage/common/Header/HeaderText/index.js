@@ -1,13 +1,13 @@
 import React from "react"
 import icon from "../../assets/hireIcon.svg"
-import { FirstHeader, HeaderDescription, Name, StyledHeaderText } from "./styled"
+import { HeaderDescription, Name, StyledHeaderText, ThisIs } from "./styled"
 import { Button } from "../../Button/Button"
 
 const HeaderText = () => (
     <StyledHeaderText>
-        <FirstHeader>
+        <ThisIs>
             this is
-        </FirstHeader>
+        </ThisIs>
         <Name>
             paweł feszler
         </Name>

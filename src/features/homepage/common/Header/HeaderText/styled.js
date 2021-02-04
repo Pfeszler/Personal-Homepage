@@ -12,7 +12,7 @@ export const StyledHeaderText = styled.section`
     }
 `
 
-export const FirstHeader = styled.h2`
+export const ThisIs = styled.p`
     font-size: 12px;
     margin: 0;
     margin-bottom: 12px;
@@ -25,7 +25,7 @@ export const FirstHeader = styled.h2`
     }
 `
 
-export const Name = styled.h3`
+export const Name = styled.h1`
     margin: 0;
     font-size: 38px;
     font-weight: 900;

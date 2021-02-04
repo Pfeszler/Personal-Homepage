@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import picture from "../assets/picture.jpg"
 
-export const StyledHeader = styled.h1`
+export const StyledHeader = styled.header`
     width: 100%;
     display: flex;
     margin: 0 0;
