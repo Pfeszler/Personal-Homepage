@@ -7,6 +7,7 @@ const SocialList = () => (
         {socials.map(({ title, link, Icon }) => (
             <IconLink
                 href={link}
+                key={title}
                 title={title}
                 target="_blank"
                 rel="nonreferer"

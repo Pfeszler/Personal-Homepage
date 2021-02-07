@@ -37,6 +37,7 @@ export const FooterText = styled.p`
     color: ${({ theme }) => theme.color.textPrimary};
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
+        width:unset;
         margin: 12px 0;
         font-size: 14px;
     }
