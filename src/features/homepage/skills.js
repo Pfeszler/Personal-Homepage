@@ -21,3 +21,12 @@ export const skillset = [
     "Teamwork",
     "Customer Service"
 ];
+
+export const toLearn = [
+    "Scrum/Agile",
+    "Firebase",
+    "Webpack",
+    "Testing",
+    "TypeScript",
+    "More about things i learned so far :)"
+]

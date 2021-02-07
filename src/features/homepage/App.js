@@ -9,13 +9,12 @@ import Footer from "./common/Footer";
 import Header from "./common/Header";
 import ListSection from "./common/ListSection";
 import Portfolio from "./common/Portfolio";
-import { skillset } from "./skills";
+import { skillset, toLearn } from "./skills";
 
 
 function App() {
 
   const darkMode = useSelector(selectDarkMode);
-  const array = ["Teamwork", "2", "3", "4"];
 
   return (
     <ThemeProvider
@@ -30,7 +29,7 @@ function App() {
         />
         <ListSection
           title="What I want to lern"
-          list={array}
+          list={toLearn}
         />
         <Portfolio />
         <Footer />
