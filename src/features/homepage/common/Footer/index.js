@@ -15,7 +15,9 @@ const Footer = () => (
             {email}
         </Email>
         <FooterText>
-            lorem blsa jwkaj djawk djwkajkldwa jkldjwklqjd irugitejwg  ifdjqwidjqw  oidopkwpok djdskajdz  wqiodiiowaij djskajdaslkjdwaj jfkjwakfjw
+            If you want to talk about web development, job oportunieties or offer some feedback on my project feel free to contanct me, you can find a direct link to my e-mail adres above.
+           <br />
+            PS. Also, i love DnD and always happy to talk about it, so any message about my favorite tabletop game is also welcome ;)
         </FooterText>
         <SocialList />
     </footer>
