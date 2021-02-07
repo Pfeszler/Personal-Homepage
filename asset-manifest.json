@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.js": "/Personal-Homepage/static/js/main.cff2a040.chunk.js",
+    "main.js.map": "/Personal-Homepage/static/js/main.cff2a040.chunk.js.map",
+    "runtime-main.js": "/Personal-Homepage/static/js/runtime-main.f11b2372.js",
+    "runtime-main.js.map": "/Personal-Homepage/static/js/runtime-main.f11b2372.js.map",
+    "static/js/2.be381cf0.chunk.js": "/Personal-Homepage/static/js/2.be381cf0.chunk.js",
+    "static/js/2.be381cf0.chunk.js.map": "/Personal-Homepage/static/js/2.be381cf0.chunk.js.map",
+    "static/js/3.50eeac9a.chunk.js": "/Personal-Homepage/static/js/3.50eeac9a.chunk.js",
+    "static/js/3.50eeac9a.chunk.js.map": "/Personal-Homepage/static/js/3.50eeac9a.chunk.js.map",
+    "index.html": "/Personal-Homepage/index.html",
+    "static/js/2.be381cf0.chunk.js.LICENSE.txt": "/Personal-Homepage/static/js/2.be381cf0.chunk.js.LICENSE.txt",
+    "static/media/FacebookLogo.c92d6cf6.svg": "/Personal-Homepage/static/media/FacebookLogo.c92d6cf6.svg",
+    "static/media/GitHubLogo.cfdad05e.svg": "/Personal-Homepage/static/media/GitHubLogo.cfdad05e.svg",
+    "static/media/LinkedInLogo.9aa19f8e.svg": "/Personal-Homepage/static/media/LinkedInLogo.9aa19f8e.svg",
+    "static/media/darkModeButton.4ff1de67.svg": "/Personal-Homepage/static/media/darkModeButton.4ff1de67.svg",
+    "static/media/failedIcon.5aa740a4.svg": "/Personal-Homepage/static/media/failedIcon.5aa740a4.svg",
+    "static/media/hireIcon.b5d25eb0.svg": "/Personal-Homepage/static/media/hireIcon.b5d25eb0.svg",
+    "static/media/loadingImage.f0cf9f6a.svg": "/Personal-Homepage/static/media/loadingImage.f0cf9f6a.svg",
+    "static/media/picture.6b1502f4.jpg": "/Personal-Homepage/static/media/picture.6b1502f4.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f11b2372.js",
+    "static/js/2.be381cf0.chunk.js",
+    "static/js/main.cff2a040.chunk.js"
+  ]
+}
