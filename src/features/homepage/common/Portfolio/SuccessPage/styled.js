@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 export const StyledSuccessPage = styled.ul`
     display: grid;
@@ -71,7 +71,7 @@ export const Label = styled.span`
 `
 
 export const Link = styled.a`
-    display: inline-block;
+    word-break: break-all;
     padding: 1px 0;
     margin-left: 8px;
     text-decoration: none;
@@ -87,5 +87,15 @@ export const Link = styled.a`
         outline: none;
         border-bottom: 1px solid currentColor;
     }
+
+    ${({ noDemo }) => noDemo && css`
+        color: ${({ theme }) => theme.color.textPrimary};
+        cursor: unset;
+        
+
+        &:hover, &:focus {
+            border-bottom: 1px solid transparent;
+        }       
+    `}
     
 `

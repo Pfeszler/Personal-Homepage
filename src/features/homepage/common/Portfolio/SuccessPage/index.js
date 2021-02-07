@@ -27,8 +27,9 @@ const SuccessPage = ({ status }) => {
                         <Link
                             href={project.homepage}
                             target="_blank"
+                            noDemo={project.homepage === "" || project.homepage === null}
                         >
-                            {project.homepage}
+                            {project.homepage ? project.homepage : "currently not avalible"}
                         </Link>
                     </LinkContainer>
                     <LinkContainer>
@@ -39,7 +40,7 @@ const SuccessPage = ({ status }) => {
                             href={project.svn_url}
                             target="_blank"
                         >
-                            {project.svn_url.replace("https://github.com/", "")}
+                            {project.svn_url}
                         </Link>
                     </LinkContainer>
                 </ProjectTile>
