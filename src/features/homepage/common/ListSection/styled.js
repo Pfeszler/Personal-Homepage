@@ -5,7 +5,7 @@ export const StyledListSection = styled.section`
     padding: 32px;
     width: 100%;
     border-radius: 4px;
-    box-shadow: 0px -2px 50px ${({ theme }) => theme.color.shadow};
+    box-shadow: ${({ theme }) => theme.boxShadow};
     background: ${({ theme }) => theme.color.section};
     transition: background 0.3s;
 

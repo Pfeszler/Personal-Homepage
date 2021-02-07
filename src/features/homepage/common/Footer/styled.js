@@ -7,7 +7,7 @@ export const FooterHeader = styled.h2`
     text-transform: uppercase;
     color: ${({ theme }) => theme.color.textSecondary};
 
-    @media(max-width: ${({theme}) => theme.breakpoints.mobileMax}px){
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
         margin: 12px 0;
     }
 `
@@ -24,7 +24,7 @@ export const Email = styled.a`
         color: ${({ theme }) => theme.color.emailHover}
     }
 
-    @media(max-width: ${({theme}) => theme.breakpoints.mobileMax}px){
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
         font-size: 18px;
         margin: 12px 0;
     }
@@ -36,7 +36,7 @@ export const FooterText = styled.p`
     font-size: 18px;
     color: ${({ theme }) => theme.color.textPrimary};
 
-    @media(max-width: ${({theme}) => theme.breakpoints.mobileMax}px){
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
         margin: 12px 0;
         font-size: 14px;
     }

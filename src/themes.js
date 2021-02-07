@@ -1,4 +1,15 @@
+const otherProperties = {
+    breakpoints: {
+        tabletMax: 991,
+        mobileMax: 767
+    },
+    transition: {
+        darkModeButton: 0
+    },
+    boxShadow: "0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);"}
+
 export const light = {
+    ...otherProperties,
     color: {
         background: "#FBFBFE ",
         textPrimary: "#252525",
@@ -12,7 +23,6 @@ export const light = {
         slider: "#E5E5E5",
         sliderBorder: "rgba(209, 213, 218, 0.3)",
         sliderButton: "#6E7E91",
-        shadow: "rgba(9, 10, 51, 0.02)",
         section: "#FFFFFF",
         sectionHeaderBorder: "rgba(209, 213, 218, 0.3)",
         bullet: "#0366D6",
@@ -22,19 +32,10 @@ export const light = {
         link: "#0366D6",
         emailHover: "#0366D6"
     },
-    breakpoints: {
-        tabletMax: 991,
-        mobileMax: 767
-    },
-    transition: {
-        darkModeButton: 0
-    },
-    brightness: {
-        darkModeIcon: 100
-    }
 }
 
 export const dark = {
+    ...otherProperties,
     color: {
         background: "#252525",
         textPrimary: "#FFFFFF",
@@ -48,7 +49,6 @@ export const dark = {
         slider: "rgba(54, 54, 54, 0.72)",
         sliderBorder: "rgba(9, 10, 51, 0.02)",
         sliderButton: "#FFFFFF",
-        shadow: "rgba(9, 10, 51, 0.02)",
         section: "rgba(54, 54, 54, 0.72);",
         sectionHeaderBorder: "rgba(209, 213, 218, 0.1)",
         bullet: "#2188FF",
@@ -57,15 +57,5 @@ export const dark = {
         projectTitle: "#FFFFFF",
         link: "#2188FF",
         emailHover: "#2188FF"
-    },
-    breakpoints: {
-        tabletMax: 991,
-        mobileMax: 767
-    },
-    transition: {
-        darkModeButton: 100
-    },
-    brightness: {
-        darkModeIcon: 0
     }
 }

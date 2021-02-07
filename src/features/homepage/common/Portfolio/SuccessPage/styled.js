@@ -19,7 +19,7 @@ export const ProjectTile = styled.li`
     background-color: ${({ theme }) => theme.color.section};
     transition: background 0.3s;
     border: 6px solid ${({ theme }) => theme.color.gridBorder};
-    box-shadow: 0px -2px 50px ${({ theme }) => theme.color.shadow};
+    box-shadow: ${({ theme }) => theme.boxShadow};
     transition: border 0.2s;
 
     &:hover{
